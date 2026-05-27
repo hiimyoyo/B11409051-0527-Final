@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Python Programming",
+    "isbn": "9781234567897",
+    "status": "borrowed"
+  },
+  {
+    "title": "Data Structures",
+    "isbn": "9789876543210",
+    "status": "available"
+  }
+]
