@@ -83,21 +83,20 @@ Prompt C：請使用 with 讀寫檔案並改成 ISBN 檢查函式 isbn_exists，
 請貼上執行程式並輸入 show 後，顯示資料清單。(請從呼叫執行程式到結束程式完整的把操作對話複製到下框)
 
 ```log
-C:\Users\pclab\Desktop\NTUST-0527-Final-master> python modern_library.py
+PS D:\B11409051\NTUST-0527-Final-master> python modern_library.py                                     
 === 圖書管理系統 v0.1 (Modern) ===
 Commands:
   add <title>/<isbn>/<status>
   show
   borrow <isbn>
   exit
-> Success
-> Success
-> 書名: Python Programming, ISBN: 9781234567897, 狀態: available
+> show
+書名: 深入淺出Python, ISBN: 978001, 狀態: available
+書名: 資料結構理論, ISBN: 978002, 狀態: borrowed
+書名: 演算法實作, ISBN: 978003, 狀態: available
+書名: Python Programming, ISBN: 9781234567897, 狀態: borrowed
 書名: Data Structures, ISBN: 9789876543210, 狀態: available
-> Updated
-> 書名: Python Programming, ISBN: 9781234567897, 狀態: borrowed
-書名: Data Structures, ISBN: 9789876543210, 狀態: available
-> 系統關閉
+> 
 ```
 
 ### 3.2 產出的資料檔案格式
@@ -107,13 +106,18 @@ Commands:
 ```json
 [
   {
-    "title": "Python Programming",
-    "isbn": "9781234567897",
+    "title": "深入淺出Python",
+    "isbn": "978001",
+    "status": "available"
+  },
+  {
+    "title": "資料結構理論",
+    "isbn": "978002",
     "status": "borrowed"
   },
   {
-    "title": "Data Structures",
-    "isbn": "9789876543210",
+    "title": "演算法實作",
+    "isbn": "978003",
     "status": "available"
   }
 ]
@@ -135,7 +139,7 @@ Commands:
 將專案推送到 GitHub (Public) 若提交到 Private 連結不給分。 請設定 Repository 名稱為 `學號-0527-Final` Ex: B11526748-0527-Final **請用 - 不是 _**
 
 ```log
-尚未推送到 GitHub，本地已建立 Git 倉庫。
+https://github.com/hiimyoyo/B11409051-0527-Final
 ```
 
 希望這兩份 Markdown 格式能幫你省下不少排版時間！祝你的考試順利舉行！
